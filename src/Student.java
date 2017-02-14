@@ -2,20 +2,18 @@ import java.util.List;
 
 /**
  * Created by ethan on 2017-02-07.
+ *
  * edited
  */
-
-
 public class Student extends Person {
     private String major;
     private List<Course> courseList;
+    private boolean fulltime;
 
-
-    Student(String name, String emailAddress, String major) {
+    Student(String name, String emailAddress, String major, boolean fulltime) {
         super(name, emailAddress);
         this.major = major;
-
-
+        this.fulltime = fulltime;
     }
 
     public void addCourse(Course c){
